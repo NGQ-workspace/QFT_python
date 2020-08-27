@@ -2,34 +2,27 @@
 
  The QFT relies on the encoding of qubit states into the rotational gate of the equation. 
 
-$$
-e^{2\prod i\frac{k}{N}}\alpha_k
-$$
-where: 
-
-![R gate matrix](images/rgate.jpeg)
+![R gate matrix](images/rgate.jpg)
 
 The encoding is often represented using binary notation so that:
 
-![equation](images/tildaX.png)$$\frac{1}{\sqrt{2^n}}\sum_{y=0}^{2^n-1}e^{2\prod i\omega y}|y$$
+![equation](images/tildaX.png)
 
  and ω  = 0.x1x2x3… is simply a notation.
 
 The conversion to binary and computation in decimal was confusing and it took a few days for me to figure out, but it is helpful to think of each bit of the qubit or the x state as a coordinate on the Cartesian plane.
 
 The superposition of each state of x­­­ or xy must be encoded as so that:
-$$
-x_{1\ }y_{1\ }=\ 0.00\ ,{\ x}_1y_{2\ }=\ 0.01\ ,\ x_{2\ }y_{1\ }=\ 0.10,\ x_{2\ }y_{2\ }=\ 0.11\ \  and
- |0>e^{i\pi\left(0.00\right)}|1>=e^0=1,\ |0>e^{2i\pi\left(0.01\right)}|1>=e^{i\pi/2}=i\ ,|0>e^{3i\pi(0.10)}|1>=e^{i\pi3/2}=\ -i\ ,\ |0>{\ e}^{4i\pi(0.11)}|1>=e^{i\pi}=-1  etc..
- $$
+
+![x states in binary](images/xy.jpg)
  
 The QFT on 2 qubits therefore produces 4 states which when encoded into the exponent of **Ψ** will result in 4 ¼ rotations on the Bloch sphere.
 
-![unit circle steps](images/2qrotations.jpeg)
+![unit circle steps](images/2qrotations.jpg)
 
 I wrote the code based on the qubit states encoding algorithm where:
 
-![binary encoding](images/w.jpeg)
+![binary encoding](images/w.jpg)
 
 When x is encoded into the exponent of the coefficients rotation this gives the probable location within in psi. 
 
