@@ -2,7 +2,7 @@
 
  The QFT relies on the encoding of qubit states into the rotational gate of the equation. 
 
-![R gate matrix](images/rgate.png)
+![R gate matrix](images/rgate.PNG)
 
 The encoding is often represented using binary notation so that:
 
@@ -14,15 +14,15 @@ The conversion to binary and computation in decimal was confusing and it took a 
 
 The superposition of each state of x­­­ or xy must be encoded as so that:
 
-![x states in binary](images/xy.png)
+![x states in binary](images/xy.PNG)
  
 The QFT on 2 qubits therefore produces 4 states which when encoded into the exponent of **Ψ** will result in 4 ¼ rotations on the Bloch sphere.
 
-![unit circle steps](images/2qrotations.png)
+![unit circle steps](images/2qrotations.PNG)
 
 I wrote the code based on the qubit states encoding algorithm where:
 
-![binary encoding](images/w.png)
+![binary encoding](images/w.PNG)
 
 When x is encoded into the exponent of the coefficients rotation this gives the probable location within in psi. 
 
